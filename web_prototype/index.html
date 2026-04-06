@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chimera Quantum Nav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-layer">
+        <div id="compass-container">
+            <div id="compass-ring"></div>
+            <canvas id="gl-canvas"></canvas>
+            <div id="crosshair"></div>
+        </div>
+        
+        <div id="info-panel">
+            <div id="status">Waiting for sensors...</div>
+            <div id="debug-info"></div>
+        </div>
+
+        <button id="start-btn">INITIALIZE SYSTEM</button>
+    </div>
+
+    <!-- Shaders -->
+    <script src="shaders.js"></script>
+    <!-- Main Logic -->
+    <script src="main.js"></script>
+</body>
+</html>
