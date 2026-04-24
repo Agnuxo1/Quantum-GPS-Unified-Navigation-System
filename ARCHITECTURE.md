@@ -1,4 +1,9 @@
-# ARCHITECTURE GUIDE - Quantum GPS Navigator
+# ARCHITECTURE GUIDE - Quantum-Inspired GPS Navigator
+
+> **Disclaimer:** This project is "quantum-INSPIRED", not quantum. The
+> 4-channel (N/E/S/W) amplitude representation is a classical
+> directional-diffusion metaphor. No qubits, no superposition, no
+> entanglement, no dependency on any quantum-computing library.
 
 ## System Overview
 

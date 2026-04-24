@@ -1,4 +1,8 @@
-# INDEX - Quantum GPS Navigator Repository
+# INDEX - Quantum-Inspired GPS Navigator Repository
+
+> **Disclaimer:** "Quantum-inspired" = classical directional-diffusion
+> with a 4-channel (N/E/S/W) amplitude metaphor. No qubits, no
+> superposition, no entanglement. See README.md.
 
 ## 📁 File Structure
 

@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Quick Start - Quantum GPS Navigator
-===================================
+Quick Start - Quantum-Inspired GPS Navigator
+============================================
 
-Fastest way to get the navigator running
+Fastest way to get the navigator running.
+
+NOTE: "Quantum-inspired" = classical directional-diffusion with a
+4-channel (N/E/S/W) amplitude metaphor. No qubits, no superposition,
+no entanglement. See README.md for the full disclaimer.
 """
 
 import sys

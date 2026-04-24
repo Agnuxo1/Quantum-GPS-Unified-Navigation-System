@@ -1,4 +1,9 @@
-# IMPLEMENTATION COMPLETE - Quantum GPS Navigator Unified
+# IMPLEMENTATION COMPLETE - Quantum-Inspired GPS Navigator
+
+> **Disclaimer:** "Quantum-inspired" = classical directional-diffusion
+> with a 4-channel (N/E/S/W) amplitude metaphor. No qubits, no
+> superposition, no entanglement. The Eikonal equation is solved with a
+> plain GPU shader pass or a NumPy fast-marching fallback.
 
 ## 📦 Repository Created
 

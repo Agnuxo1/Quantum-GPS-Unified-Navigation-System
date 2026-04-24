@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-gps-navigator"
+version = "1.0.0"
+description = "Quantum-Inspired GPS Navigator: directional-diffusion GPU pathfinder using a 4-channel (N/E/S/W) amplitude metaphor. 100% classical."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Francisco Angulo de Lafuente", email = "agnuxo1@gmail.com" },
+]
+keywords = ["navigation", "eikonal", "fast-marching", "gps", "pathfinding", "quantum-inspired"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = [
+    "numpy>=1.23",
+    "Pillow>=9.0",
+    "requests>=2.28",
+]
+
+[project.optional-dependencies]
+gpu = ["moderngl>=5.8", "glfw>=2.5"]
+osm = ["osmnx>=1.6"]
+dev = ["pytest>=7.4", "build>=1.0", "twine>=4.0"]
+
+[project.urls]
+Homepage = "https://github.com/Agnuxo1/Quantum-GPS-Unified-Navigation-System"
+Repository = "https://github.com/Agnuxo1/Quantum-GPS-Unified-Navigation-System"
+Issues = "https://github.com/Agnuxo1/Quantum-GPS-Unified-Navigation-System/issues"
+
+[project.scripts]
+qgps = "qgps.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["qgps*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
